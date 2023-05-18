@@ -4,6 +4,7 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+import Footer from '../components/Footer.astro'
 ---
 
 <!DOCTYPE html>
@@ -11,12 +12,15 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="../logos/tablogo.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
+	<body class=''>
+		<main class='bg-munemotorsports-grey xl:pl-40 xl:pr-40'>
+			<slot / >
+		</main>
+		<Footer />
 	</body>
 </html>
 <style is:global>
