@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Member from '../components/Member.astro';
+
+import ben from '../members/ben.jpg';
+import russell from '../members/russell.jpg';
+import michael from '../members/michael.jpg';
+---
+
+<Layout title="Our Team">
+	<main class=''>
+		<section class=''>
+			
+		</section>
+        <section class='grid grid-cols-3 space-x-10 gap-y-10 pl-20 pr-20'>
+            <Member name="Ben Thomas" title='Team Lead' linkedinURL="https://www.linkedin.com/in/brjthomas" websiteURL='https://benthomas.me/' photoPath={ben} title=''></Member>
+            <Member name="Russell Corbett" linkedinURL="https://www.linkedin.com/in/russell-corbett"  websiteURL='https://russellcorbett.ca/' photoPath={russell} title=''></Member>
+            <Member name="Michael Mallay" linkedinURL="https://www.linkedin.com/in/michael-mallay-92a769221/" photoPath={michael} title=''></Member>
+        </section>
+	</main>
+</Layout>

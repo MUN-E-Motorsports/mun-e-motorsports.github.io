@@ -6,10 +6,10 @@ module.exports = {
 			colors: {
 				'mun-burgundy': '#923343',
 				'mun-grey': '#737577',
-				'munemotorsports-navy': '#00354e',
+				'munemotorsports-navy': '#20364d',
 				'munemotorsports-yellow': '#eabc2a',
 				'munemotorsports-red': '#6d2636',
-				'munemotorsports-grey': '#A1867F',
+				'munemotorsports-grey': '#20364d',
 			}
 		},
 	},

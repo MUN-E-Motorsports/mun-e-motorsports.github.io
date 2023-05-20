@@ -5,6 +5,7 @@ export interface Props {
 
 const { title } = Astro.props;
 import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
 ---
 
 <!DOCTYPE html>
@@ -17,23 +18,29 @@ import Footer from '../components/Footer.astro'
 		<title>{title}</title>
 	</head>
 	<body class=''>
-		<main class='bg-munemotorsports-grey xl:pl-40 xl:pr-40'>
+		<main class='bg-gradient-to-br from-munemotorsports-navy to-stone-500 xl:pl-40 xl:pr-40'>
+			<Header />
 			<slot / >
 		</main>
 		<Footer />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+<style>
+	main {
+		background-size: 400% 400%;
+		animation: gradient 20s ease infinite;
+		height: 150vh;
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
+	
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
 	}
 </style>
