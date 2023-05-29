@@ -5,6 +5,13 @@ import Member from '../components/Member.astro';
 import ben from '../members/ben.jpg';
 import russell from '../members/russell.jpg';
 import michael from '../members/michael.jpg';
+import sam from '../members/sam.jpg';
+import nick from '../members/nick.jpg';
+import matthew from '../members/matthew.jpg';
+import kate from '../members/kate.jpg';
+import daniel from '../members/dan.jpg';
+import jacob from '../members/jacob.jpg';
+import ayman from '../members/ayman.jpg';
 ---
 
 <Layout title="Our Team">
@@ -12,10 +19,76 @@ import michael from '../members/michael.jpg';
 		<section class=''>
 			
 		</section>
-        <section class='grid grid-cols-3 space-x-10 gap-y-10 pl-20 pr-20'>
-            <Member name="Ben Thomas" title='Team Lead' linkedinURL="https://www.linkedin.com/in/brjthomas" websiteURL='https://benthomas.me/' photoPath={ben} title=''></Member>
-            <Member name="Russell Corbett" linkedinURL="https://www.linkedin.com/in/russell-corbett"  websiteURL='https://russellcorbett.ca/' photoPath={russell} title=''></Member>
-            <Member name="Michael Mallay" linkedinURL="https://www.linkedin.com/in/michael-mallay-92a769221/" photoPath={michael} title=''></Member>
+        <section class='grid grid-cols-3 gap-x-10 gap-y-10 pl-20 pr-20'>
+            <Member 
+                name="Ben Thomas" 
+                title='Team Lead / Chief Executive Officer' 
+                linkedinURL="https://www.linkedin.com/in/brjthomas" 
+                websiteURL='https://benthomas.me/' 
+                photoPath={ben}
+            />
+            <Member 
+                name="Samuel Sheppard" 
+                title='Chief Technology Officer - Software'
+                linkedinURL=""
+                websiteURL=''
+                photoPath={sam}
+            />
+            <Member 
+                name="Michael Mallay" 
+                title='Chief Technology Officer - Electrical'  
+                linkedinURL="https://www.linkedin.com/in/michael-mallay-92a769221/" 
+                photoPath={michael}
+            />
+            <Member 
+                name="Russell Corbett" 
+                title='Chief Information Officer'
+                linkedinURL="https://www.linkedin.com/in/russell-corbett"  
+                websiteURL='https://russellcorbett.ca/' 
+                photoPath={russell}
+            />
+            <Member 
+                name="Katherine Williams" 
+                title='Chief Marketing Officer' 
+                linkedinURL="" 
+                websiteURL='' 
+                photoPath={kate}
+            />
+            <Member 
+                name="Jacob Gillis" 
+                title='' 
+                linkedinURL="" 
+                websiteURL='' 
+                photoPath={jacob}
+            />
+            <Member
+                name="Nicholas Philpott" 
+                title='' 
+                linkedinURL="" 
+                websiteURL='' 
+                photoPath={nick}
+            />
+            <Member 
+                name="Matthew Jones" 
+                title='' 
+                linkedinURL="" 
+                websiteURL='' 
+                photoPath={matthew}
+            />
+            <Member 
+                name="Daniel Dolomount" 
+                title='' 
+                linkedinURL="" 
+                websiteURL='' 
+                photoPath={daniel}
+            />
+            <Member 
+                name="Ayman Islam" 
+                title='' 
+                linkedinURL="" 
+                websiteURL='' 
+                photoPath={ayman}
+            />
         </section>
 	</main>
 </Layout>
