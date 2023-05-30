@@ -1,5 +1,5 @@
 ---
-const { name, title, photoPath, linkedinURL, websiteURL} = Astro.props
+const { name, title, photoPath, about, linkedinURL, websiteURL} = Astro.props
 ---
 <div class="py-2">
     <div class="block max-w-xl w-full rounded-lg border bg-stone-600/50 border-gray-700 shadow-md">
@@ -27,21 +27,31 @@ const { name, title, photoPath, linkedinURL, websiteURL} = Astro.props
                     }
                 </div>
             </h5>
-            <button onclick=(expandDiv)>Read More</button>
-            <p class="font-normal text-stone-200"><slot /></p>
-            <div id={name} style="max-height: 0; overflow: hidden; transition: max-height 1s ease-in-out;">
-                This div will grow and hide when the button is clicked.
-            </div>
+            <!-- <button id='toggleAbout' class='text-white'>Read More</button>
+            <div class=expandable><span>This is the about section it shows what we are about{about}</span></div> -->
         </div>
     </div>
 </div>
 
-<script>
-    function expandDiv() {
-        var x = document.getElementById({name});
-        if (x.style.maxHeight === "0px") {
-            x.style.maxHeight = "100%";
-        } else {
-            x.style.maxHeight = "0px";
-        }
+<!-- <script>
+    var readMoreButton = document.getElementById('toggleAbout');
+    readMoreButton.addEventListener('click', toggleDiv);
+  
+    function toggleDiv() {
+      var div = document.querySelector('.expandable');
+      div.classList.toggle('expanded');
     }
+  </script>
+
+<style>
+    .expandable {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+    }
+  
+    .expanded {
+      max-height: 100%;
+    }
+</style> -->
+
