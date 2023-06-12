@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Member from '../components/Member.astro';
+
+import ben from '../content/ben.jpg';
 ---
 
 <Layout title="Our Team">
@@ -14,7 +16,7 @@ import Member from '../components/Member.astro';
                 title='Team Lead / Chief Executive Officer' 
                 linkedinURL="https://www.linkedin.com/in/brjthomas" 
                 websiteURL='https://benthomas.me/' 
-                photoPath='../content/ben.jpg'
+                photoPath={ben}
             />
             <!-- <Member 
                 name="Samuel Sheppard" 
